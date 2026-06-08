@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Lobster Two", serif;
+    background: radial-gradient(circle at top left, #fbf8f2 0%, #f9f5ee 35%, #f6f1e8 100%);
+    color: #382a20;
+    min-height: 100vh;
+}
+
+p,
+li{
+    font-family: "PT Serif", serif;
+    font-size: 1.35rem;
+    line-height: 1.8;
+}
+
+.pt-serif-regular {
+    font-family: "Lobster Two", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pt-serif-bold {
+    font-family: "Lobster Two", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.pt-serif-regular-italic {
+    font-family: "Lobster Two", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.pt-serif-bold-italic {
+    font-family: "Lobster Two", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+header {
+    padding: 1.5rem 1rem;
+    background: rgba(255, 246, 236, 0.95);
+    box-shadow: 0 16px 42px rgba(60, 43, 28, 0.12);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px; 
+}
+
+.header-logo {
+    position: absolute;
+    left: 2rem;
+    top: 50%; /* Joga a imagem para o meio vertical do container */
+    transform: translateY(-50%); /* Ajuste fino matemático para centralizar perfeitamente */
+    height: 4.8rem;
+    width: auto;
+    border-radius: 0.75rem;
+    object-fit: contain;
+}
+.lobster-two-regular {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lobster-two-bold {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lobster-two-regular-italic {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lobster-two-bold-italic {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 3.2rem);
+    letter-spacing: 0.1em;
+    color: #b7724b;
+}
+
+/* --- MAIN & TÍTULOS --- */
+main {
+    max-width: 1240px;
+    margin: 2.5rem auto 3rem;
+    padding: 0 1rem;
+}
+
+main h3 {
+    font-family: "Archivo Black", sans-serif;
+    color: #243c5d;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrow-icon {
+    color: #b7724b;
+}
+
+footer .quote-text.fst-italic.fs-5 {
+    font-family: "Lobster Two", serif;
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+#sobre-nos p,
+#servicos li,
+#localizacao p {
+    font-family: "PT Serif", serif;
+}
+
+#servicos li {
+    font-size: 1.35rem;
+    line-height: 1.8;
+}
+
+#sobre-nos h3::before,
+#servicos h3::before,
+#localizacao h3::before {
+    content: "|";
+    color: #b7724b;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: bold;
+}
+
+/* --- CARDS DO NOVO WIREFRAME --- */
+.card {
+    background: #ededec !important;
+    border: 1px solid rgba(109, 80, 53, 0.16) !important;
+    border-radius: 1.5rem !important;
+    box-shadow: 0 12px 40px rgba(83, 57, 33, 0.05) !important;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.card h4 {
+    font-family: "Archivo Black", sans-serif;
+    color: #5e4837 !important;
+    letter-spacing: 0.1em;
+}
+
+/* --- CATÁLOGO DE RAÇAS (ESTILO ORIGINAL RESTAURADO) --- */
+.breed-section {
+    margin-bottom: 3rem;
+    padding: 2rem 1.75rem;
+    background: #ededec;
+    border: 1px solid rgba(109, 80, 53, 0.16);
+    border-radius: 2rem;
+    box-shadow: 0 24px 80px rgba(83, 57, 33, 0.08);
+}
+
+.breed-title {
+    margin: 0 0 1.5rem;
+    text-align: center;
+    font-size: clamp(1.8rem, 2.2vw, 2.6rem);
+    color: #b7724b;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.small-carousel {
+    width: 80%;
+    max-width: 980px;
+    min-width: 520px;
+    margin: 0 auto;
+    border-radius: 2rem;
+    overflow: hidden;
+    background: #fdf7ef;
+}
+
+.small-carousel .carousel-inner {
+    border-radius: 2rem;
+}
+
+.small-carousel .carousel-item img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.small-carousel .carousel-item img:hover {
+    transform: scale(1.02);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgba(129, 86, 47, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.carousel-indicators .active {
+    background-color: #a4612b;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.22));
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: rgba(255, 246, 236, 0.95) !important;
+    border-top: 2px solid rgba(109, 80, 53, 0.16) !important;
+    color: #243c5d;
+    font-size: 1rem;
+}
+
+footer h4 {
+    font-family: "Archivo Black", sans-serif;
+    color: #243c5d;
+    font-size: 1.5rem;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 1080px) {
+    .small-carousel {
+        width: 90%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-logo {
+        position: static;
+        transform: none;
+        height: 4rem;
+        margin-bottom: 0.5rem;
+    }
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    main {
+        margin: 1.5rem auto 2rem;
+    }
+    .breed-section {
+        padding: 1.5rem 1rem;
+    }
+    .small-carousel {
+        width: 100%;
+    }
+    .small-carousel .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+}
